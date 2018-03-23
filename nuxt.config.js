@@ -11,12 +11,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Barlow:400,600|Playfair+Display:700'
-      }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
   css: ['~/assets/main.css'],
@@ -24,4 +19,4 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#3e64ea' }
-};
+}

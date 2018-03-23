@@ -5,7 +5,7 @@
       <h1>Cart</h1>
       <div class="cartitems"
         v-for="item in cart"
-        key="item">
+        :key="item">
         <div class="carttext">
           <h4>{{ item.name }}</h4>
           <p>{{ item.price | usdollar }} x {{ item.count }}</p>
@@ -47,6 +47,9 @@ export default {
   components: {
     AppCheckout,
     AppSuccess
+  },
+  mounted() {
+    console.log(this.$store)
   },
   computed: {
     cart() {
